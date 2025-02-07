@@ -57,14 +57,8 @@ double calcularTarifa(int horas, int dia) {
 int main() {
     int horas, dia;
 
-    cout << "Ingrese el numero de horas y el dia de la semana (1=lunes, 7=domingo):"   <<endl;
     cin >> horas >> dia;
 
-
-    if (dia < 1 || dia > 7) {
-        cout << "Dia invalido. Debe ser entre 1 y 7." << endl;
-        return 0;
-    }
 
     double resultado = calcularTarifa(horas, dia);
     if (resultado == -1) {
